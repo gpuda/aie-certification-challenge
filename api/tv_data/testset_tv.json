@@ -1,0 +1,332 @@
+[
+  {
+    "user_input":"In the context of the IPTV Monthly Report for December 2024, how does the performance of HRT 1 in terms of LTV compare to other channels based on total minutes and unique viewers?",
+    "reference_contexts":[
+      "IPTV Monthly Report for month_partition=202412\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 1 (LTV) with 33726930 minutes and 4972636 viewers.\n Top 20 entries:\n"
+    ],
+    "reference":"In the IPTV Monthly Report for December 2024, HRT 1 is the top entry with 33,726,930 minutes of playback and 4,972,636 unique viewers, indicating a strong performance in terms of LTV compared to other channels.",
+    "persona_name":"Customer Care Lead",
+    "query_style":"PERFECT_GRAMMAR",
+    "query_length":"LONG",
+    "synthesizer_name":"single_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What are the viewer statistics for Doma TV over the last 31 days?",
+    "reference_contexts":[
+      "- channel=HRT 1 | playback=LTV | minutes=33726930 | viewers=4972636 | days=31\n- channel=Arenasport 1 | playback=LTV | minutes=6922661 | viewers=1131978 | days=31\n- channel=Doma TV | playback=LTV | minutes=6326153 | viewers=1890390 | days=31\n- channel=N1 | playback=LTV | minutes=3939420 | viewers=1687682 | days=31\n- channel=HRT 4 | playback=LTV | minutes=3754198 | viewers=1850634 | days=31\n- channel=HRT 3 | playback=LTV | minutes=2713154 | viewers=1417377 | days=31\n- channel=History | playback=LTV | minutes=2523603 | viewers=557429 | days=31\n- channel=Laudato TV | playback=LTV | minutes=2298236 | viewers=265048 | days=31\n- channel=CineStar TV Action & Thriller | playback=LTV | minutes=1589365 | viewers=811884 | days=31\n- channel=RTL Living | playback=LTV | minutes=1479450 | viewers=1113647 | days=31\n- channel=Nat Geo Wild | playback=LTV | minutes=1153967 | viewers=618366 | days=31\n- channel=Hit mjeseca | playback=LTV | minutes=1122672 | viewers=581481 | days=31\n- channel=HRT 1 | playback=CUTV | minutes=1003681 | viewers=429962 | days=31\n- channel=STAR | playback=LTV | minutes=996884 | viewers=428259 | days=31\n- channel=Arenasport 4 | playback=LTV | minutes=925962 | viewers=379084 | days=31\n- channel=Viasat History | playback=LTV | minutes=875389 | viewers=447924 | days=31\n- channel=STAR Life | playback=LTV | minutes=801090 | viewers=430310 | days=31\n- channel=Sportska Televizija | playback=LTV | minutes=629741 | viewers=471375 | days=31\n- channel=24Kitchen | playback=LTV | minutes=598219 | viewers=220017 | days=31\n- channel=RTL | playback=IR | minutes=476768 | viewers=190437 | days=31"
+    ],
+    "reference":"Doma TV had a total of 6,326,153 minutes of playback and 1,890,390 viewers over the last 31 days.",
+    "persona_name":"Customer Care Lead",
+    "query_style":"WEB_SEARCH_LIKE",
+    "query_length":"MEDIUM",
+    "synthesizer_name":"single_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What top channel in IPTV Monthly Report?",
+    "reference_contexts":[
+      "IPTV Monthly Report for month_partition=202501\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is Nova TV (LTV) with 51622038 minutes and 4499806 viewers.\n"
+    ],
+    "reference":"Top entry is Nova TV (LTV) with 51622038 minutes and 4499806 viewers.",
+    "persona_name":"Customer Care Lead",
+    "query_style":"POOR_GRAMMAR",
+    "query_length":"SHORT",
+    "synthesizer_name":"single_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"How does RTL perform in terms of viewer engagement compared to other channels?",
+    "reference_contexts":[
+      "Top 20 entries:\n- channel=Nova TV | playback=LTV | minutes=51622038 | viewers=4499806 | days=31\n- channel=RTL | playback=LTV | minutes=17995050 | viewers=4999005 | days=31\n- channel=HRT 2 | playback=LTV | minutes=9679808 | viewers=3714941 | days=31\n- channel=Pickbox TV | playback=LTV | minutes=2090874 | viewers=979252 | days=31\n- channel=STAR Movies | playback=LTV | minutes=1876254 | viewers=666714 | days=31\n- channel=RTL Crime | playback=LTV | minutes=1729496 | viewers=613972 | days=31\n- channel=History 2 | playback=LTV | minutes=1686104 | viewers=354712 | days=31\n- channel=HRT 1 | playback=CUTV | minutes=1439805 | viewers=448042 | days=31\n- channel=STAR | playback=LTV | minutes=1260089 | viewers=432808 | days=31\n- channel=HBO 2 | playback=LTV | minutes=1258012 | viewers=283577 | days=31\n- channel=STAR Crime | playback=LTV | minutes=1151274 | viewers=355222 | days=31\n- channel=Laudato TV | playback=LTV | minutes=1049978 | viewers=253122 | days=31\n- channel=MAXSport 1 | playback=LTV | minutes=957845 | viewers=1080272 | days=31\n- channel=RTL | playback=CUTV | minutes=921298 | viewers=414685 | days=31\n- channel=24Kitchen | playback=LTV | minutes=714489 | viewers=232257 | days=31\n- channel=AMC | playback=LTV | minutes=530667 | viewers=314181 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=507585 | viewers=155224 | days=31\n- channel=DMC | playback=LTV | minutes=474212 | viewers=170504 | days=31\n- channel=Arenasport 5 | playback=LTV | minutes=381771 | viewers=218515 | days=31\n- channel=Nova TV | playback=IR | minutes=300734 | viewers=154216 | days=31"
+    ],
+    "reference":"RTL has a total of 4,999,005 viewers and 17,995,050 minutes of playback over 31 days, indicating a strong viewer engagement.",
+    "persona_name":"IPTV Product Manager",
+    "query_style":"PERFECT_GRAMMAR",
+    "query_length":"MEDIUM",
+    "synthesizer_name":"single_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What is the LTV and how many minutes and viewers MAXSport 1 got in the report?",
+    "reference_contexts":[
+      "IPTV Monthly Report for month_partition=202502\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is MAXSport 1 (LTV) with 14939709 minutes and 1525719 viewers.\n"
+    ],
+    "reference":"The LTV for MAXSport 1 is 14939709 minutes and it had 1525719 viewers according to the IPTV Monthly Report.",
+    "persona_name":"Customer Care Lead",
+    "query_style":"POOR_GRAMMAR",
+    "query_length":"LONG",
+    "synthesizer_name":"single_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"How many viewing minutes and viewers did STAR Movies have in the last 28 days?",
+    "reference_contexts":[
+      "Top 20 entries:\n- channel=MAXSport 1 | playback=LTV | minutes=14939709 | viewers=1525719 | days=28\n- channel=RTL 2 | playback=LTV | minutes=6028754 | viewers=1496486 | days=28\n- channel=HRT 4 | playback=LTV | minutes=3647068 | viewers=1538547 | days=28\n- channel=RTL Kockica | playback=LTV | minutes=2055286 | viewers=406879 | days=28\n- channel=CineStar TV Action & Thriller | playback=LTV | minutes=1769651 | viewers=668288 | days=28\n- channel=STAR Movies | playback=LTV | minutes=1491679 | viewers=509246 | days=28\n- channel=Klasik | playback=LTV | minutes=1000656 | viewers=589378 | days=28\n- channel=RTL | playback=CUTV | minutes=892851 | viewers=429985 | days=28\n- channel=Nat Geo Wild | playback=LTV | minutes=873471 | viewers=507786 | days=28\n- channel=Viasat Explore | playback=LTV | minutes=823702 | viewers=355613 | days=28\n- channel=ExtraTV | playback=LTV | minutes=693878 | viewers=86069 | days=28\n- channel=AMC | playback=LTV | minutes=625752 | viewers=303272 | days=28\n- channel=History 2 | playback=LTV | minutes=497389 | viewers=290465 | days=28\n- channel=Nick Jr. hrvatski | playback=LTV | minutes=486558 | viewers=96021 | days=28\n- channel=RTL 2 | playback=CUTV | minutes=340128 | viewers=218399 | days=28\n- channel=RTL | playback=IR | minutes=332355 | viewers=192144 | days=28\n- channel=RTL Passion | playback=LTV | minutes=326837 | viewers=76751 | days=28\n- channel=Nova TV | playback=IR | minutes=304821 | viewers=165736 | days=28\n- channel=M1 Film | playback=LTV | minutes=262566 | viewers=281136 | days=28\n- channel=Pickbox TV | playback=CUTV | minutes=237972 | viewers=68282 | days=28"
+    ],
+    "reference":"In the last 28 days, STAR Movies had 1,491,679 viewing minutes and 509,246 viewers.",
+    "persona_name":"Network Ops Analyst",
+    "query_style":"PERFECT_GRAMMAR",
+    "query_length":"MEDIUM",
+    "synthesizer_name":"single_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"Wht are the total minits and unique viwers for HRT 1?",
+    "reference_contexts":[
+      "IPTV Monthly Report for month_partition=202503\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 1 (LTV) with 26220170 minutes and 4308720 viewers.\n"
+    ],
+    "reference":"The total minutes for HRT 1 are 26,220,170 and the unique viewers are 4,308,720.",
+    "persona_name":"Network Ops Analyst",
+    "query_style":"MISSPELLED",
+    "query_length":"MEDIUM",
+    "synthesizer_name":"single_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"How does the viewership of the STAR Crime channel compare to other channels in terms of total minutes watched and number of viewers over the past 31 days?",
+    "reference_contexts":[
+      "Top 20 entries:\n- channel=HRT 1 | playback=LTV | minutes=26220170 | viewers=4308720 | days=31\n- channel=RTL | playback=LTV | minutes=13176547 | viewers=3703519 | days=31\n- channel=Doma TV | playback=LTV | minutes=4791697 | viewers=1559868 | days=31\n- channel=RTL 2 | playback=LTV | minutes=4498934 | viewers=1504212 | days=31\n- channel=HRT 4 | playback=LTV | minutes=4394336 | viewers=1573021 | days=31\n- channel=RTL | playback=CUTV | minutes=1360524 | viewers=456669 | days=31\n- channel=History | playback=LTV | minutes=1083026 | viewers=467405 | days=31\n- channel=STAR Crime | playback=LTV | minutes=838027 | viewers=273535 | days=31\n- channel=MAXSport 2 | playback=LTV | minutes=810551 | viewers=403608 | days=31\n- channel=MAXSport 1 | playback=LTV | minutes=773430 | viewers=1567040 | days=31\n- channel=AMC | playback=LTV | minutes=635372 | viewers=328032 | days=31\n- channel=Nat Geo Wild | playback=LTV | minutes=634358 | viewers=522105 | days=31\n- channel=Viasat History | playback=LTV | minutes=629122 | viewers=337773 | days=31\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=603487 | viewers=154386 | days=31\n- channel=RTL | playback=IR | minutes=462337 | viewers=183810 | days=31\n- channel=Epic Drama | playback=LTV | minutes=461262 | viewers=86352 | days=31\n- channel=Arenasport 2 | playback=LTV | minutes=423343 | viewers=622149 | days=31\n- channel=HBO 3 | playback=LTV | minutes=407695 | viewers=175764 | days=31\n- channel=Arenasport 4 | playback=LTV | minutes=397014 | viewers=306086 | days=31\n- channel=Viasat Explore | playback=LTV | minutes=375664 | viewers=345064 | days=31"
+    ],
+    "reference":"The STAR Crime channel had a total of 838,027 minutes watched and 273,535 viewers over the past 31 days. In comparison, other channels such as HRT 1 had 26,220,170 minutes and 4,308,720 viewers, while RTL had 13,176,547 minutes and 3,703,519 viewers. This indicates that STAR Crime had significantly lower viewership metrics compared to the top channels.",
+    "persona_name":"Customer Care Lead",
+    "query_style":"PERFECT_GRAMMAR",
+    "query_length":"LONG",
+    "synthesizer_name":"single_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What top channel in IPTV report have most minutes and viewers?",
+    "reference_contexts":[
+      "IPTV Monthly Report for month_partition=202504\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is RTL (LTV) with 17311677 minutes and 3723270 viewers.\n Top 20 entries:\n"
+    ],
+    "reference":"Top entry is RTL (LTV) with 17311677 minutes and 3723270 viewers.",
+    "persona_name":"Network Ops Analyst",
+    "query_style":"POOR_GRAMMAR",
+    "query_length":"MEDIUM",
+    "synthesizer_name":"single_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What are the top channel statistics for RTL in the IPTV Monthly Report for January 2026 compared to the top entry in the report for May 2025?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202601\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is RTL (LTV) with 28551461 minutes and 5356582 viewers.\n Top 20 entries:\n",
+      "<2-hop>\n\n- channel=RTL | playback=LTV | minutes=28551461 | viewers=5356582 | days=31\n- channel=RTL 2 | playback=LTV | minutes=9754281 | viewers=2729228 | days=31\n- channel=Klasik | playback=LTV | minutes=2238233 | viewers=915631 | days=31\n- channel=Sportska Televizija | playback=LTV | minutes=1880163 | viewers=439141 | days=31\n- channel=National Geographic | playback=LTV | minutes=1696709 | viewers=859007 | days=31\n- channel=STAR Life | playback=LTV | minutes=1308736 | viewers=425220 | days=31\n- channel=Nat Geo Wild | playback=LTV | minutes=1164291 | viewers=739247 | days=31\n- channel=Pickbox 1 | playback=LTV | minutes=1011964 | viewers=988975 | days=31\n- channel=History | playback=LTV | minutes=1001803 | viewers=566316 | days=31\n- channel=History 2 | playback=LTV | minutes=925198 | viewers=343965 | days=31\n- channel=Arenasport 4 | playback=LTV | minutes=845743 | viewers=478454 | days=31\n- channel=Viasat History | playback=LTV | minutes=716032 | viewers=425282 | days=31\n- channel=Nickelodeon | playback=LTV | minutes=703783 | viewers=171667 | days=31\n- channel=Viasat Nature | playback=LTV | minutes=566718 | viewers=424173 | days=31\n- channel=TV Zapad | playback=LTV | minutes=545584 | viewers=114070 | days=31\n- channel=Kanal Ri | playback=LTV | minutes=503571 | viewers=87724 | days=31\n- channel=RTL Crime | playback=LTV | minutes=486914 | viewers=174385 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=485718 | viewers=175796 | days=31\n- channel=M1 Film | playback=LTV | minutes=461626 | viewers=344438 | days=31\n- channel=Nick Jr. | playback=LTV | minutes=419708 | viewers=106475 | days=31",
+      "<3-hop>\n\nIPTV Monthly Report for month_partition=202505\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 3 (LTV) with 5107452 minutes and 1325707 viewers.\n Top 20 entries:\n",
+      "<4-hop>\n\n- channel=HRT 3 | playback=LTV | minutes=5107452 | viewers=1325707 | days=31\n- channel=MAXSport 2 | playback=LTV | minutes=5097821 | viewers=530541 | days=31\n- channel=RTL Crime | playback=LTV | minutes=3060280 | viewers=540242 | days=31\n- channel=Arenasport 3 | playback=LTV | minutes=2062363 | viewers=338792 | days=31\n- channel=STAR | playback=LTV | minutes=1898148 | viewers=342845 | days=31\n- channel=CineStar TV 1 | playback=LTV | minutes=1627610 | viewers=1058660 | days=31\n- channel=Doku TV | playback=LTV | minutes=1559596 | viewers=365903 | days=31\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=1047342 | viewers=170644 | days=31\n- channel=History | playback=LTV | minutes=1026791 | viewers=501275 | days=31\n- channel=HBO 2 | playback=LTV | minutes=771158 | viewers=247106 | days=31\n- channel=Viasat Explore | playback=LTV | minutes=736595 | viewers=379236 | days=31\n- channel=Viasat True Crime | playback=LTV | minutes=640955 | viewers=292876 | days=31\n- channel=Hit mjeseca | playback=LTV | minutes=638322 | viewers=618822 | days=31\n- channel=Viasat History | playback=LTV | minutes=595787 | viewers=357140 | days=31\n- channel=DMC | playback=LTV | minutes=416767 | viewers=146481 | days=31\n- channel=HBO | playback=LTV | minutes=410370 | viewers=276467 | days=31\n- channel=Happy | playback=LTV | minutes=399285 | viewers=108406 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=379914 | viewers=136705 | days=31\n- channel=Hayat | playback=LTV | minutes=354285 | viewers=119216 | days=31\n- channel=Nickelodeon HD | playback=LTV | minutes=329628 | viewers=52118 | days=31",
+      "<5-hop>\n\nIPTV Monthly Report for month_partition=202503\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 1 (LTV) with 26220170 minutes and 4308720 viewers.\n",
+      "<6-hop>\n\nTop 20 entries:\n- channel=HRT 1 | playback=LTV | minutes=26220170 | viewers=4308720 | days=31\n- channel=RTL | playback=LTV | minutes=13176547 | viewers=3703519 | days=31\n- channel=Doma TV | playback=LTV | minutes=4791697 | viewers=1559868 | days=31\n- channel=RTL 2 | playback=LTV | minutes=4498934 | viewers=1504212 | days=31\n- channel=HRT 4 | playback=LTV | minutes=4394336 | viewers=1573021 | days=31\n- channel=RTL | playback=CUTV | minutes=1360524 | viewers=456669 | days=31\n- channel=History | playback=LTV | minutes=1083026 | viewers=467405 | days=31\n- channel=STAR Crime | playback=LTV | minutes=838027 | viewers=273535 | days=31\n- channel=MAXSport 2 | playback=LTV | minutes=810551 | viewers=403608 | days=31\n- channel=MAXSport 1 | playback=LTV | minutes=773430 | viewers=1567040 | days=31\n- channel=AMC | playback=LTV | minutes=635372 | viewers=328032 | days=31\n- channel=Nat Geo Wild | playback=LTV | minutes=634358 | viewers=522105 | days=31\n- channel=Viasat History | playback=LTV | minutes=629122 | viewers=337773 | days=31\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=603487 | viewers=154386 | days=31\n- channel=RTL | playback=IR | minutes=462337 | viewers=183810 | days=31\n- channel=Epic Drama | playback=LTV | minutes=461262 | viewers=86352 | days=31\n- channel=Arenasport 2 | playback=LTV | minutes=423343 | viewers=622149 | days=31\n- channel=HBO 3 | playback=LTV | minutes=407695 | viewers=175764 | days=31\n- channel=Arenasport 4 | playback=LTV | minutes=397014 | viewers=306086 | days=31\n- channel=Viasat Explore | playback=LTV | minutes=375664 | viewers=345064 | days=31"
+    ],
+    "reference":"In the IPTV Monthly Report for January 2026, the top channel is RTL with 28,551,461 minutes and 5,356,582 viewers. In comparison, the top entry in the report for May 2025 is HRT 3, which had 5,107,452 minutes and 1,325,707 viewers.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_abstract_query_synthesizer"
+  },
+  {
+    "user_input":"Wich channel had the most viewers in the IPTV Monthly Report for 202509 and how does it compare to the top channel in the previous report for 202505?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202509\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is Nova TV (LTV) with 24369006 minutes and 3844087 viewers.\n",
+      "<2-hop>\n\nTop 20 entries:\n- channel=Nova TV | playback=LTV | minutes=24369006 | viewers=3844087 | days=26\n- channel=CineStar 1 | playback=LTV | minutes=1947553 | viewers=914307 | days=26\n- channel=Pickbox TV | playback=LTV | minutes=1750737 | viewers=632909 | days=26\n- channel=Hit mjeseca | playback=LTV | minutes=1418612 | viewers=473520 | days=26\n- channel=STAR Movies | playback=LTV | minutes=1204802 | viewers=470998 | days=26\n- channel=STAR | playback=LTV | minutes=965803 | viewers=324446 | days=26\n- channel=STAR Crime | playback=LTV | minutes=924932 | viewers=267778 | days=26\n- channel=HRT 1 | playback=CUTV | minutes=806006 | viewers=372284 | days=26\n- channel=Viasat History | playback=LTV | minutes=772622 | viewers=318013 | days=26\n- channel=Viasat True Crime | playback=LTV | minutes=769159 | viewers=246547 | days=26\n- channel=HBO 3 | playback=LTV | minutes=642314 | viewers=155044 | days=26\n- channel=Cinestar Fantasy | playback=LTV | minutes=468568 | viewers=427916 | days=26\n- channel=Arenasport 2 | playback=LTV | minutes=458921 | viewers=527011 | days=26\n- channel=Arena Fight | playback=LTV | minutes=428023 | viewers=200358 | days=26\n- channel=CineStar 1 | playback=CUTV | minutes=417355 | viewers=44587 | days=26\n- channel=Baby TV | playback=LTV | minutes=369947 | viewers=63095 | days=26\n- channel=Kino TV | playback=LTV | minutes=348568 | viewers=316312 | days=26\n- channel=24Kitchen | playback=LTV | minutes=313331 | viewers=174006 | days=26\n- channel=Mini TV | playback=LTV | minutes=202932 | viewers=55720 | days=26\n- channel=Hayat | playback=LTV | minutes=202364 | viewers=107031 | days=26",
+      "<3-hop>\n\nIPTV Monthly Report for month_partition=202505\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 3 (LTV) with 5107452 minutes and 1325707 viewers.\n Top 20 entries:\n",
+      "<4-hop>\n\nIPTV Monthly Report for month_partition=202412\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 1 (LTV) with 33726930 minutes and 4972636 viewers.\n Top 20 entries:\n"
+    ],
+    "reference":"In the IPTV Monthly Report for 202509, the channel with the most viewers was Nova TV (LTV) with 3844087 viewers. In comparison, the top channel in the previous report for 202505 was HRT 3 (LTV), which had 1325707 viewers. This shows that Nova TV had significantly more viewers than HRT 3.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_abstract_query_synthesizer"
+  },
+  {
+    "user_input":"In the IPTV Monthly Report for January 2026, how do the total viewing minutes and unique viewers of the top channel, RTL, compare to the top channel, HRT 3, in the report for May 2025?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202601\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is RTL (LTV) with 28551461 minutes and 5356582 viewers.\n Top 20 entries:\n",
+      "<2-hop>\n\n- channel=RTL | playback=LTV | minutes=28551461 | viewers=5356582 | days=31\n- channel=RTL 2 | playback=LTV | minutes=9754281 | viewers=2729228 | days=31\n- channel=Klasik | playback=LTV | minutes=2238233 | viewers=915631 | days=31\n- channel=Sportska Televizija | playback=LTV | minutes=1880163 | viewers=439141 | days=31\n- channel=National Geographic | playback=LTV | minutes=1696709 | viewers=859007 | days=31\n- channel=STAR Life | playback=LTV | minutes=1308736 | viewers=425220 | days=31\n- channel=Nat Geo Wild | playback=LTV | minutes=1164291 | viewers=739247 | days=31\n- channel=Pickbox 1 | playback=LTV | minutes=1011964 | viewers=988975 | days=31\n- channel=History | playback=LTV | minutes=1001803 | viewers=566316 | days=31\n- channel=History 2 | playback=LTV | minutes=925198 | viewers=343965 | days=31\n- channel=Arenasport 4 | playback=LTV | minutes=845743 | viewers=478454 | days=31\n- channel=Viasat History | playback=LTV | minutes=716032 | viewers=425282 | days=31\n- channel=Nickelodeon | playback=LTV | minutes=703783 | viewers=171667 | days=31\n- channel=Viasat Nature | playback=LTV | minutes=566718 | viewers=424173 | days=31\n- channel=TV Zapad | playback=LTV | minutes=545584 | viewers=114070 | days=31\n- channel=Kanal Ri | playback=LTV | minutes=503571 | viewers=87724 | days=31\n- channel=RTL Crime | playback=LTV | minutes=486914 | viewers=174385 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=485718 | viewers=175796 | days=31\n- channel=M1 Film | playback=LTV | minutes=461626 | viewers=344438 | days=31\n- channel=Nick Jr. | playback=LTV | minutes=419708 | viewers=106475 | days=31",
+      "<3-hop>\n\nIPTV Monthly Report for month_partition=202505\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 3 (LTV) with 5107452 minutes and 1325707 viewers.\n Top 20 entries:\n",
+      "<4-hop>\n\n- channel=HRT 3 | playback=LTV | minutes=5107452 | viewers=1325707 | days=31\n- channel=MAXSport 2 | playback=LTV | minutes=5097821 | viewers=530541 | days=31\n- channel=RTL Crime | playback=LTV | minutes=3060280 | viewers=540242 | days=31\n- channel=Arenasport 3 | playback=LTV | minutes=2062363 | viewers=338792 | days=31\n- channel=STAR | playback=LTV | minutes=1898148 | viewers=342845 | days=31\n- channel=CineStar TV 1 | playback=LTV | minutes=1627610 | viewers=1058660 | days=31\n- channel=Doku TV | playback=LTV | minutes=1559596 | viewers=365903 | days=31\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=1047342 | viewers=170644 | days=31\n- channel=History | playback=LTV | minutes=1026791 | viewers=501275 | days=31\n- channel=HBO 2 | playback=LTV | minutes=771158 | viewers=247106 | days=31\n- channel=Viasat Explore | playback=LTV | minutes=736595 | viewers=379236 | days=31\n- channel=Viasat True Crime | playback=LTV | minutes=640955 | viewers=292876 | days=31\n- channel=Hit mjeseca | playback=LTV | minutes=638322 | viewers=618822 | days=31\n- channel=Viasat History | playback=LTV | minutes=595787 | viewers=357140 | days=31\n- channel=DMC | playback=LTV | minutes=416767 | viewers=146481 | days=31\n- channel=HBO | playback=LTV | minutes=410370 | viewers=276467 | days=31\n- channel=Happy | playback=LTV | minutes=399285 | viewers=108406 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=379914 | viewers=136705 | days=31\n- channel=Hayat | playback=LTV | minutes=354285 | viewers=119216 | days=31\n- channel=Nickelodeon HD | playback=LTV | minutes=329628 | viewers=52118 | days=31",
+      "<5-hop>\n\nIPTV Monthly Report for month_partition=202511\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is STAR (LTV) with 2090232 minutes and 395254 viewers.\n Top 20 entries:\n",
+      "<6-hop>\n\n- channel=STAR | playback=LTV | minutes=2090232 | viewers=395254 | days=30\n- channel=Cinestar Comedy & Family | playback=LTV | minutes=1618853 | viewers=533394 | days=30\n- channel=Nova TV | playback=CUTV | minutes=1386279 | viewers=641573 | days=30\n- channel=RTL Living | playback=LTV | minutes=1371068 | viewers=732097 | days=30\n- channel=Laudato TV | playback=LTV | minutes=1088388 | viewers=254835 | days=30\n- channel=Nat Geo Wild | playback=LTV | minutes=1014053 | viewers=623922 | days=30\n- channel=HRT 1 | playback=CUTV | minutes=1012562 | viewers=493329 | days=30\n- channel=AMC | playback=LTV | minutes=835985 | viewers=495260 | days=30\n- channel=RTL 2 | playback=CUTV | minutes=783633 | viewers=255227 | days=30\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=733789 | viewers=187323 | days=30\n- channel=Baby TV | playback=LTV | minutes=696362 | viewers=74257 | days=30\n- channel=DMC | playback=LTV | minutes=644581 | viewers=155132 | days=30\n- channel=History 2 | playback=LTV | minutes=551758 | viewers=299251 | days=30\n- channel=24Kitchen | playback=LTV | minutes=537112 | viewers=225042 | days=30\n- channel=Doku TV | playback=LTV | minutes=532073 | viewers=403899 | days=30\n- channel=Nick Jr. | playback=LTV | minutes=453245 | viewers=94271 | days=30\n- channel=FilmBox Extra | playback=LTV | minutes=444638 | viewers=182665 | days=30\n- channel=Doma TV | playback=CUTV | minutes=420439 | viewers=150271 | days=30\n- channel=HBO 3 | playback=LTV | minutes=380500 | viewers=212191 | days=30\n- channel=Cinestar Fantasy | playback=LTV | minutes=379081 | viewers=551121 | days=30"
+    ],
+    "reference":"In the IPTV Monthly Report for January 2026, the top channel RTL had a total of 28,551,461 minutes and 5,356,582 unique viewers. In comparison, the top channel HRT 3 in the report for May 2025 had 5,107,452 minutes and 1,325,707 unique viewers. This indicates that RTL significantly outperformed HRT 3 in both total viewing minutes and unique viewers.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_abstract_query_synthesizer"
+  },
+  {
+    "user_input":"What was the top channel in the IPTV Monthly Report for December 2015 and how does its viewership compare to the top channel in the report for May 2015?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202512\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is RTL (LTV) with 34289971 minutes and 4349916 viewers.\n Top 20 entries:\n",
+      "<2-hop>\n\n- channel=RTL | playback=LTV | minutes=34289971 | viewers=4349916 | days=31\n- channel=HRT 2 | playback=LTV | minutes=11207665 | viewers=3430322 | days=31\n- channel=Klasik | playback=LTV | minutes=3463372 | viewers=780911 | days=31\n- channel=Cinestar Fantasy | playback=LTV | minutes=1991579 | viewers=590655 | days=31\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=1572320 | viewers=232066 | days=31\n- channel=Nat Geo Wild | playback=LTV | minutes=1243519 | viewers=624412 | days=31\n- channel=History | playback=LTV | minutes=1122894 | viewers=511569 | days=31\n- channel=Pickbox 2 | playback=LTV | minutes=832881 | viewers=700350 | days=31\n- channel=Nickelodeon | playback=LTV | minutes=772484 | viewers=177743 | days=31\n- channel=24Kitchen | playback=LTV | minutes=636099 | viewers=197851 | days=31\n- channel=RTL Crime | playback=LTV | minutes=563961 | viewers=177311 | days=31\n- channel=Viasat Nature | playback=LTV | minutes=398388 | viewers=336511 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=335743 | viewers=152020 | days=31\n- channel=MAXSport 2 | playback=LTV | minutes=332284 | viewers=418386 | days=31\n- channel=ExtraTV | playback=LTV | minutes=290821 | viewers=99987 | days=31\n- channel=Doku TV | playback=LTV | minutes=278195 | viewers=400114 | days=31\n- channel=Nicktoons | playback=LTV | minutes=239516 | viewers=58251 | days=31\n- channel=Happy | playback=LTV | minutes=224360 | viewers=88671 | days=31\n- channel=Sport 1 | playback=LTV | minutes=198541 | viewers=97413 | days=31\n- channel=STAR | playback=CUTV | minutes=190765 | viewers=57974 | days=31",
+      "<3-hop>\n\nIPTV Monthly Report for month_partition=202505\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 3 (LTV) with 5107452 minutes and 1325707 viewers.\n Top 20 entries:\n",
+      "<4-hop>\n\nIPTV Monthly Report for month_partition=202508\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 1 (LTV) with 29617085 minutes and 4183270 viewers.\n"
+    ],
+    "reference":"The top channel in the IPTV Monthly Report for December 2015 was RTL (LTV) with 34289971 minutes and 4349916 viewers. In comparison, the top channel in the report for May 2015 was HRT 3 (LTV) with 5107452 minutes and 1325707 viewers, indicating that RTL had significantly higher viewership in December 2015.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_abstract_query_synthesizer"
+  },
+  {
+    "user_input":"How many unique viewers did MAXSport 1 have compared to HRT 3 in the IPTV reports?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202502\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is MAXSport 1 (LTV) with 14939709 minutes and 1525719 viewers.\n",
+      "<2-hop>\n\nTop 20 entries:\n- channel=MAXSport 1 | playback=LTV | minutes=14939709 | viewers=1525719 | days=28\n- channel=RTL 2 | playback=LTV | minutes=6028754 | viewers=1496486 | days=28\n- channel=HRT 4 | playback=LTV | minutes=3647068 | viewers=1538547 | days=28\n- channel=RTL Kockica | playback=LTV | minutes=2055286 | viewers=406879 | days=28\n- channel=CineStar TV Action & Thriller | playback=LTV | minutes=1769651 | viewers=668288 | days=28\n- channel=STAR Movies | playback=LTV | minutes=1491679 | viewers=509246 | days=28\n- channel=Klasik | playback=LTV | minutes=1000656 | viewers=589378 | days=28\n- channel=RTL | playback=CUTV | minutes=892851 | viewers=429985 | days=28\n- channel=Nat Geo Wild | playback=LTV | minutes=873471 | viewers=507786 | days=28\n- channel=Viasat Explore | playback=LTV | minutes=823702 | viewers=355613 | days=28\n- channel=ExtraTV | playback=LTV | minutes=693878 | viewers=86069 | days=28\n- channel=AMC | playback=LTV | minutes=625752 | viewers=303272 | days=28\n- channel=History 2 | playback=LTV | minutes=497389 | viewers=290465 | days=28\n- channel=Nick Jr. hrvatski | playback=LTV | minutes=486558 | viewers=96021 | days=28\n- channel=RTL 2 | playback=CUTV | minutes=340128 | viewers=218399 | days=28\n- channel=RTL | playback=IR | minutes=332355 | viewers=192144 | days=28\n- channel=RTL Passion | playback=LTV | minutes=326837 | viewers=76751 | days=28\n- channel=Nova TV | playback=IR | minutes=304821 | viewers=165736 | days=28\n- channel=M1 Film | playback=LTV | minutes=262566 | viewers=281136 | days=28\n- channel=Pickbox TV | playback=CUTV | minutes=237972 | viewers=68282 | days=28",
+      "<3-hop>\n\nIPTV Monthly Report for month_partition=202505\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 3 (LTV) with 5107452 minutes and 1325707 viewers.\n Top 20 entries:\n",
+      "<4-hop>\n\nIPTV Monthly Report for month_partition=202510\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is RTL (LTV) with 39590583 minutes and 3910362 viewers.\n"
+    ],
+    "reference":"MAXSport 1 had 1,525,719 unique viewers in the IPTV Monthly Report for month_partition=202502, while HRT 3 had 1,325,707 unique viewers in the IPTV Monthly Report for month_partition=202505.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_abstract_query_synthesizer"
+  },
+  {
+    "user_input":"What are the channel statistics for HRT 3 in the IPTV Monthly Report for May 2025?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202505\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 3 (LTV) with 5107452 minutes and 1325707 viewers.\n Top 20 entries:\n",
+      "<2-hop>\n\n- channel=HRT 3 | playback=LTV | minutes=5107452 | viewers=1325707 | days=31\n- channel=MAXSport 2 | playback=LTV | minutes=5097821 | viewers=530541 | days=31\n- channel=RTL Crime | playback=LTV | minutes=3060280 | viewers=540242 | days=31\n- channel=Arenasport 3 | playback=LTV | minutes=2062363 | viewers=338792 | days=31\n- channel=STAR | playback=LTV | minutes=1898148 | viewers=342845 | days=31\n- channel=CineStar TV 1 | playback=LTV | minutes=1627610 | viewers=1058660 | days=31\n- channel=Doku TV | playback=LTV | minutes=1559596 | viewers=365903 | days=31\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=1047342 | viewers=170644 | days=31\n- channel=History | playback=LTV | minutes=1026791 | viewers=501275 | days=31\n- channel=HBO 2 | playback=LTV | minutes=771158 | viewers=247106 | days=31\n- channel=Viasat Explore | playback=LTV | minutes=736595 | viewers=379236 | days=31\n- channel=Viasat True Crime | playback=LTV | minutes=640955 | viewers=292876 | days=31\n- channel=Hit mjeseca | playback=LTV | minutes=638322 | viewers=618822 | days=31\n- channel=Viasat History | playback=LTV | minutes=595787 | viewers=357140 | days=31\n- channel=DMC | playback=LTV | minutes=416767 | viewers=146481 | days=31\n- channel=HBO | playback=LTV | minutes=410370 | viewers=276467 | days=31\n- channel=Happy | playback=LTV | minutes=399285 | viewers=108406 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=379914 | viewers=136705 | days=31\n- channel=Hayat | playback=LTV | minutes=354285 | viewers=119216 | days=31\n- channel=Nickelodeon HD | playback=LTV | minutes=329628 | viewers=52118 | days=31",
+      "<3-hop>\n\nIPTV Monthly Report for month_partition=202504\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is RTL (LTV) with 17311677 minutes and 3723270 viewers.\n Top 20 entries:\n",
+      "<4-hop>\n\nIPTV Monthly Report for month_partition=202501\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is Nova TV (LTV) with 51622038 minutes and 4499806 viewers.\n"
+    ],
+    "reference":"In the IPTV Monthly Report for May 2025, HRT 3 (LTV) had a total of 5,107,452 minutes of playback and 1,325,707 unique viewers over 31 days.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_abstract_query_synthesizer"
+  },
+  {
+    "user_input":"In the IPTV Monthly Report for month_partition=202502, how does the top entry MAXSport 1 compare in total viewing minutes and unique viewers to the top entry HRT 3 from the report for month_partition=202505?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202502\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is MAXSport 1 (LTV) with 14939709 minutes and 1525719 viewers.\n",
+      "<2-hop>\n\nTop 20 entries:\n- channel=MAXSport 1 | playback=LTV | minutes=14939709 | viewers=1525719 | days=28\n- channel=RTL 2 | playback=LTV | minutes=6028754 | viewers=1496486 | days=28\n- channel=HRT 4 | playback=LTV | minutes=3647068 | viewers=1538547 | days=28\n- channel=RTL Kockica | playback=LTV | minutes=2055286 | viewers=406879 | days=28\n- channel=CineStar TV Action & Thriller | playback=LTV | minutes=1769651 | viewers=668288 | days=28\n- channel=STAR Movies | playback=LTV | minutes=1491679 | viewers=509246 | days=28\n- channel=Klasik | playback=LTV | minutes=1000656 | viewers=589378 | days=28\n- channel=RTL | playback=CUTV | minutes=892851 | viewers=429985 | days=28\n- channel=Nat Geo Wild | playback=LTV | minutes=873471 | viewers=507786 | days=28\n- channel=Viasat Explore | playback=LTV | minutes=823702 | viewers=355613 | days=28\n- channel=ExtraTV | playback=LTV | minutes=693878 | viewers=86069 | days=28\n- channel=AMC | playback=LTV | minutes=625752 | viewers=303272 | days=28\n- channel=History 2 | playback=LTV | minutes=497389 | viewers=290465 | days=28\n- channel=Nick Jr. hrvatski | playback=LTV | minutes=486558 | viewers=96021 | days=28\n- channel=RTL 2 | playback=CUTV | minutes=340128 | viewers=218399 | days=28\n- channel=RTL | playback=IR | minutes=332355 | viewers=192144 | days=28\n- channel=RTL Passion | playback=LTV | minutes=326837 | viewers=76751 | days=28\n- channel=Nova TV | playback=IR | minutes=304821 | viewers=165736 | days=28\n- channel=M1 Film | playback=LTV | minutes=262566 | viewers=281136 | days=28\n- channel=Pickbox TV | playback=CUTV | minutes=237972 | viewers=68282 | days=28",
+      "<3-hop>\n\nIPTV Monthly Report for month_partition=202505\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 3 (LTV) with 5107452 minutes and 1325707 viewers.\n Top 20 entries:\n",
+      "<4-hop>\n\nIPTV Monthly Report for month_partition=202412\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 1 (LTV) with 33726930 minutes and 4972636 viewers.\n Top 20 entries:\n"
+    ],
+    "reference":"In the IPTV Monthly Report for month_partition=202502, the top entry MAXSport 1 had a total of 14,939,709 minutes and 1,525,719 unique viewers. In comparison, the top entry HRT 3 from the report for month_partition=202505 had 5,107,452 minutes and 1,325,707 unique viewers. This shows that MAXSport 1 significantly outperformed HRT 3 in both total viewing minutes and unique viewers.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_abstract_query_synthesizer"
+  },
+  {
+    "user_input":"What was the total minutes and viewers for HRT 1 in the IPTV Monthly Report for 202412?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202412\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 1 (LTV) with 33726930 minutes and 4972636 viewers.\n Top 20 entries:\n",
+      "<2-hop>\n\n- channel=HRT 1 | playback=LTV | minutes=33726930 | viewers=4972636 | days=31\n- channel=Arenasport 1 | playback=LTV | minutes=6922661 | viewers=1131978 | days=31\n- channel=Doma TV | playback=LTV | minutes=6326153 | viewers=1890390 | days=31\n- channel=N1 | playback=LTV | minutes=3939420 | viewers=1687682 | days=31\n- channel=HRT 4 | playback=LTV | minutes=3754198 | viewers=1850634 | days=31\n- channel=HRT 3 | playback=LTV | minutes=2713154 | viewers=1417377 | days=31\n- channel=History | playback=LTV | minutes=2523603 | viewers=557429 | days=31\n- channel=Laudato TV | playback=LTV | minutes=2298236 | viewers=265048 | days=31\n- channel=CineStar TV Action & Thriller | playback=LTV | minutes=1589365 | viewers=811884 | days=31\n- channel=RTL Living | playback=LTV | minutes=1479450 | viewers=1113647 | days=31\n- channel=Nat Geo Wild | playback=LTV | minutes=1153967 | viewers=618366 | days=31\n- channel=Hit mjeseca | playback=LTV | minutes=1122672 | viewers=581481 | days=31\n- channel=HRT 1 | playback=CUTV | minutes=1003681 | viewers=429962 | days=31\n- channel=STAR | playback=LTV | minutes=996884 | viewers=428259 | days=31\n- channel=Arenasport 4 | playback=LTV | minutes=925962 | viewers=379084 | days=31\n- channel=Viasat History | playback=LTV | minutes=875389 | viewers=447924 | days=31\n- channel=STAR Life | playback=LTV | minutes=801090 | viewers=430310 | days=31\n- channel=Sportska Televizija | playback=LTV | minutes=629741 | viewers=471375 | days=31\n- channel=24Kitchen | playback=LTV | minutes=598219 | viewers=220017 | days=31\n- channel=RTL | playback=IR | minutes=476768 | viewers=190437 | days=31",
+      "<3-hop>\n\nIPTV Monthly Report for month_partition=202505\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 3 (LTV) with 5107452 minutes and 1325707 viewers.\n Top 20 entries:\n",
+      "<4-hop>\n\nIPTV Monthly Report for month_partition=202507\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is RTL 2 (LTV) with 6189502 minutes and 1314610 viewers.\n"
+    ],
+    "reference":"In the IPTV Monthly Report for month_partition=202412, HRT 1 had a total of 33726930 minutes and 4972636 viewers.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_abstract_query_synthesizer"
+  },
+  {
+    "user_input":"What were the top channels in the IPTV Monthly Report for December 2015, and how did their viewership compare to the top channels in the previous months?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202512\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is RTL (LTV) with 34289971 minutes and 4349916 viewers.\n Top 20 entries:\n",
+      "<2-hop>\n\n- channel=RTL | playback=LTV | minutes=34289971 | viewers=4349916 | days=31\n- channel=HRT 2 | playback=LTV | minutes=11207665 | viewers=3430322 | days=31\n- channel=Klasik | playback=LTV | minutes=3463372 | viewers=780911 | days=31\n- channel=Cinestar Fantasy | playback=LTV | minutes=1991579 | viewers=590655 | days=31\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=1572320 | viewers=232066 | days=31\n- channel=Nat Geo Wild | playback=LTV | minutes=1243519 | viewers=624412 | days=31\n- channel=History | playback=LTV | minutes=1122894 | viewers=511569 | days=31\n- channel=Pickbox 2 | playback=LTV | minutes=832881 | viewers=700350 | days=31\n- channel=Nickelodeon | playback=LTV | minutes=772484 | viewers=177743 | days=31\n- channel=24Kitchen | playback=LTV | minutes=636099 | viewers=197851 | days=31\n- channel=RTL Crime | playback=LTV | minutes=563961 | viewers=177311 | days=31\n- channel=Viasat Nature | playback=LTV | minutes=398388 | viewers=336511 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=335743 | viewers=152020 | days=31\n- channel=MAXSport 2 | playback=LTV | minutes=332284 | viewers=418386 | days=31\n- channel=ExtraTV | playback=LTV | minutes=290821 | viewers=99987 | days=31\n- channel=Doku TV | playback=LTV | minutes=278195 | viewers=400114 | days=31\n- channel=Nicktoons | playback=LTV | minutes=239516 | viewers=58251 | days=31\n- channel=Happy | playback=LTV | minutes=224360 | viewers=88671 | days=31\n- channel=Sport 1 | playback=LTV | minutes=198541 | viewers=97413 | days=31\n- channel=STAR | playback=CUTV | minutes=190765 | viewers=57974 | days=31",
+      "<3-hop>\n\nIPTV Monthly Report for month_partition=202505\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 3 (LTV) with 5107452 minutes and 1325707 viewers.\n Top 20 entries:\n",
+      "<4-hop>\n\nIPTV Monthly Report for month_partition=202503\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 1 (LTV) with 26220170 minutes and 4308720 viewers.\n"
+    ],
+    "reference":"In the IPTV Monthly Report for December 2015, the top channel was RTL (LTV) with 34,289,971 minutes and 4,349,916 viewers. In comparison, the top channel in the previous month, October 2015, was HRT 3 (LTV) with 5,107,452 minutes and 1,325,707 viewers, while in August 2015, the top channel was HRT 1 (LTV) with 26,220,170 minutes and 4,308,720 viewers. This indicates a significant increase in viewership for RTL in December compared to the previous months.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_abstract_query_synthesizer"
+  },
+  {
+    "user_input":"HRT 1 how many minutes and viewers in the report?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202412\n Fields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is HRT 1 (LTV) with 33726930 minutes and 4972636 viewers.\n Top 20 entries:\n"
+    ],
+    "reference":"In the IPTV Monthly Report for December 2024, HRT 1 (LTV) had a total of 33,726,930 minutes of playback and 4,972,636 unique viewers.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What were the viewer statistics for Nickelodeon compared to other channels over the last 31 days?",
+    "reference_contexts":[
+      "<1-hop>\n\n- channel=RTL | playback=LTV | minutes=34289971 | viewers=4349916 | days=31\n- channel=HRT 2 | playback=LTV | minutes=11207665 | viewers=3430322 | days=31\n- channel=Klasik | playback=LTV | minutes=3463372 | viewers=780911 | days=31\n- channel=Cinestar Fantasy | playback=LTV | minutes=1991579 | viewers=590655 | days=31\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=1572320 | viewers=232066 | days=31\n- channel=Nat Geo Wild | playback=LTV | minutes=1243519 | viewers=624412 | days=31\n- channel=History | playback=LTV | minutes=1122894 | viewers=511569 | days=31\n- channel=Pickbox 2 | playback=LTV | minutes=832881 | viewers=700350 | days=31\n- channel=Nickelodeon | playback=LTV | minutes=772484 | viewers=177743 | days=31\n- channel=24Kitchen | playback=LTV | minutes=636099 | viewers=197851 | days=31\n- channel=RTL Crime | playback=LTV | minutes=563961 | viewers=177311 | days=31\n- channel=Viasat Nature | playback=LTV | minutes=398388 | viewers=336511 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=335743 | viewers=152020 | days=31\n- channel=MAXSport 2 | playback=LTV | minutes=332284 | viewers=418386 | days=31\n- channel=ExtraTV | playback=LTV | minutes=290821 | viewers=99987 | days=31\n- channel=Doku TV | playback=LTV | minutes=278195 | viewers=400114 | days=31\n- channel=Nicktoons | playback=LTV | minutes=239516 | viewers=58251 | days=31\n- channel=Happy | playback=LTV | minutes=224360 | viewers=88671 | days=31\n- channel=Sport 1 | playback=LTV | minutes=198541 | viewers=97413 | days=31\n- channel=STAR | playback=CUTV | minutes=190765 | viewers=57974 | days=31"
+    ],
+    "reference":"Over the last 31 days, Nickelodeon had 772,484 minutes of playback and 177,743 viewers. In comparison, other channels such as RTL had 34,289,971 minutes of playback with 4,349,916 viewers, while HRT 2 had 11,207,665 minutes and 3,430,322 viewers. Nickelodeon's viewership was significantly lower than that of the top channels.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What are the viewer statistics for HRT 2 compared to other channels over the last 30 days?",
+    "reference_contexts":[
+      "<1-hop>\n\n- channel=RTL | playback=LTV | minutes=17311677 | viewers=3723270 | days=30\n- channel=HRT 2 | playback=LTV | minutes=9247283 | viewers=2958856 | days=30\n- channel=RTL 2 | playback=LTV | minutes=5216461 | viewers=1520971 | days=30\n- channel=HRT 4 | playback=LTV | minutes=4651457 | viewers=1576710 | days=30\n- channel=RTL Living | playback=LTV | minutes=1424867 | viewers=966659 | days=30\n- channel=CineStar TV 1 | playback=LTV | minutes=1359056 | viewers=988719 | days=30\n- channel=CineStar TV Action & Thriller | playback=LTV | minutes=1255713 | viewers=697999 | days=30\n- channel=Nat Geo Wild | playback=LTV | minutes=1219963 | viewers=507764 | days=30\n- channel=Klasik | playback=LTV | minutes=1048177 | viewers=642385 | days=30\n- channel=Viasat Explore | playback=LTV | minutes=1031452 | viewers=348727 | days=30\n- channel=Doma TV | playback=CUTV | minutes=925222 | viewers=162245 | days=30\n- channel=Hit mjeseca | playback=LTV | minutes=564143 | viewers=489227 | days=30\n- channel=RTL 2 | playback=CUTV | minutes=478270 | viewers=230573 | days=30\n- channel=History 2 | playback=LTV | minutes=476495 | viewers=272985 | days=30\n- channel=Arena Fight | playback=LTV | minutes=370539 | viewers=195978 | days=30\n- channel=ExtraTV | playback=LTV | minutes=358066 | viewers=86553 | days=30\n- channel=HRT 2 | playback=IR | minutes=345015 | viewers=61132 | days=30\n- channel=Crime & Investigation | playback=LTV | minutes=335544 | viewers=126715 | days=30\n- channel=bravo! TV | playback=LTV | minutes=318286 | viewers=69572 | days=30\n- channel=BBC Earth | playback=LTV | minutes=302314 | viewers=150671 | days=30"
+    ],
+    "reference":"Over the last 30 days, HRT 2 had a total of 9,247,283 minutes of playback and 2,958,856 viewers. In comparison, RTL had 17,311,677 minutes of playback with 3,723,270 viewers, while RTL 2 had 5,216,461 minutes and 1,520,971 viewers. HRT 2's performance indicates a significant viewer engagement relative to other channels.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What are the viewer statistics for CMC - Croatian Music Channel compared to its performance in the previous month based on the playback data?",
+    "reference_contexts":[
+      "<1-hop>\n\n- channel=STAR | playback=LTV | minutes=2090232 | viewers=395254 | days=30\n- channel=Cinestar Comedy & Family | playback=LTV | minutes=1618853 | viewers=533394 | days=30\n- channel=Nova TV | playback=CUTV | minutes=1386279 | viewers=641573 | days=30\n- channel=RTL Living | playback=LTV | minutes=1371068 | viewers=732097 | days=30\n- channel=Laudato TV | playback=LTV | minutes=1088388 | viewers=254835 | days=30\n- channel=Nat Geo Wild | playback=LTV | minutes=1014053 | viewers=623922 | days=30\n- channel=HRT 1 | playback=CUTV | minutes=1012562 | viewers=493329 | days=30\n- channel=AMC | playback=LTV | minutes=835985 | viewers=495260 | days=30\n- channel=RTL 2 | playback=CUTV | minutes=783633 | viewers=255227 | days=30\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=733789 | viewers=187323 | days=30\n- channel=Baby TV | playback=LTV | minutes=696362 | viewers=74257 | days=30\n- channel=DMC | playback=LTV | minutes=644581 | viewers=155132 | days=30\n- channel=History 2 | playback=LTV | minutes=551758 | viewers=299251 | days=30\n- channel=24Kitchen | playback=LTV | minutes=537112 | viewers=225042 | days=30\n- channel=Doku TV | playback=LTV | minutes=532073 | viewers=403899 | days=30\n- channel=Nick Jr. | playback=LTV | minutes=453245 | viewers=94271 | days=30\n- channel=FilmBox Extra | playback=LTV | minutes=444638 | viewers=182665 | days=30\n- channel=Doma TV | playback=CUTV | minutes=420439 | viewers=150271 | days=30\n- channel=HBO 3 | playback=LTV | minutes=380500 | viewers=212191 | days=30\n- channel=Cinestar Fantasy | playback=LTV | minutes=379081 | viewers=551121 | days=30",
+      "<2-hop>\n\n- channel=HRT 3 | playback=LTV | minutes=5107452 | viewers=1325707 | days=31\n- channel=MAXSport 2 | playback=LTV | minutes=5097821 | viewers=530541 | days=31\n- channel=RTL Crime | playback=LTV | minutes=3060280 | viewers=540242 | days=31\n- channel=Arenasport 3 | playback=LTV | minutes=2062363 | viewers=338792 | days=31\n- channel=STAR | playback=LTV | minutes=1898148 | viewers=342845 | days=31\n- channel=CineStar TV 1 | playback=LTV | minutes=1627610 | viewers=1058660 | days=31\n- channel=Doku TV | playback=LTV | minutes=1559596 | viewers=365903 | days=31\n- channel=CMC - Croatian Music Channel | playback=LTV | minutes=1047342 | viewers=170644 | days=31\n- channel=History | playback=LTV | minutes=1026791 | viewers=501275 | days=31\n- channel=HBO 2 | playback=LTV | minutes=771158 | viewers=247106 | days=31\n- channel=Viasat Explore | playback=LTV | minutes=736595 | viewers=379236 | days=31\n- channel=Viasat True Crime | playback=LTV | minutes=640955 | viewers=292876 | days=31\n- channel=Hit mjeseca | playback=LTV | minutes=638322 | viewers=618822 | days=31\n- channel=Viasat History | playback=LTV | minutes=595787 | viewers=357140 | days=31\n- channel=DMC | playback=LTV | minutes=416767 | viewers=146481 | days=31\n- channel=HBO | playback=LTV | minutes=410370 | viewers=276467 | days=31\n- channel=Happy | playback=LTV | minutes=399285 | viewers=108406 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=379914 | viewers=136705 | days=31\n- channel=Hayat | playback=LTV | minutes=354285 | viewers=119216 | days=31\n- channel=Nickelodeon HD | playback=LTV | minutes=329628 | viewers=52118 | days=31"
+    ],
+    "reference":"In the last 30 days, CMC - Croatian Music Channel had 733,789 minutes of playback with 187,323 viewers. In the previous month, it had 1,047,342 minutes of playback and 170,644 viewers, indicating an increase in viewer engagement despite a decrease in total playback minutes.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What are the viewer statistics for HRT 2 compared to other channels over the last 30 days?",
+    "reference_contexts":[
+      "<1-hop>\n\n- channel=RTL | playback=LTV | minutes=17311677 | viewers=3723270 | days=30\n- channel=HRT 2 | playback=LTV | minutes=9247283 | viewers=2958856 | days=30\n- channel=RTL 2 | playback=LTV | minutes=5216461 | viewers=1520971 | days=30\n- channel=HRT 4 | playback=LTV | minutes=4651457 | viewers=1576710 | days=30\n- channel=RTL Living | playback=LTV | minutes=1424867 | viewers=966659 | days=30\n- channel=CineStar TV 1 | playback=LTV | minutes=1359056 | viewers=988719 | days=30\n- channel=CineStar TV Action & Thriller | playback=LTV | minutes=1255713 | viewers=697999 | days=30\n- channel=Nat Geo Wild | playback=LTV | minutes=1219963 | viewers=507764 | days=30\n- channel=Klasik | playback=LTV | minutes=1048177 | viewers=642385 | days=30\n- channel=Viasat Explore | playback=LTV | minutes=1031452 | viewers=348727 | days=30\n- channel=Doma TV | playback=CUTV | minutes=925222 | viewers=162245 | days=30\n- channel=Hit mjeseca | playback=LTV | minutes=564143 | viewers=489227 | days=30\n- channel=RTL 2 | playback=CUTV | minutes=478270 | viewers=230573 | days=30\n- channel=History 2 | playback=LTV | minutes=476495 | viewers=272985 | days=30\n- channel=Arena Fight | playback=LTV | minutes=370539 | viewers=195978 | days=30\n- channel=ExtraTV | playback=LTV | minutes=358066 | viewers=86553 | days=30\n- channel=HRT 2 | playback=IR | minutes=345015 | viewers=61132 | days=30\n- channel=Crime & Investigation | playback=LTV | minutes=335544 | viewers=126715 | days=30\n- channel=bravo! TV | playback=LTV | minutes=318286 | viewers=69572 | days=30\n- channel=BBC Earth | playback=LTV | minutes=302314 | viewers=150671 | days=30"
+    ],
+    "reference":"Over the last 30 days, HRT 2 had a total of 9,247,283 minutes of playback and 2,958,856 viewers. In comparison, the channel with the highest viewer count, RTL, had 37,232,270 minutes of playback and 3,723,270 viewers, while other channels like HRT 4 and RTL 2 had 4,651,457 and 5,216,461 minutes of playback with 1,576,710 and 1,520,971 viewers, respectively.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What were the total minutes and unique viewers for RTL 2 in the IPTV Monthly Report for July 2025, and how does this compare to its performance in the top 20 entries for the same month?",
+    "reference_contexts":[
+      "<1-hop>\n\nIPTV Monthly Report for month_partition=202507\nFields: channelname, content_playback_type, total_minutes, unique_viewers, days\n Summary: Top entry is RTL 2 (LTV) with 6189502 minutes and 1314610 viewers.\n",
+      "<2-hop>\n\nTop 20 entries:\n- channel=MAXSport 1 | playback=LTV | minutes=14939709 | viewers=1525719 | days=28\n- channel=RTL 2 | playback=LTV | minutes=6028754 | viewers=1496486 | days=28\n- channel=HRT 4 | playback=LTV | minutes=3647068 | viewers=1538547 | days=28\n- channel=RTL Kockica | playback=LTV | minutes=2055286 | viewers=406879 | days=28\n- channel=CineStar TV Action & Thriller | playback=LTV | minutes=1769651 | viewers=668288 | days=28\n- channel=STAR Movies | playback=LTV | minutes=1491679 | viewers=509246 | days=28\n- channel=Klasik | playback=LTV | minutes=1000656 | viewers=589378 | days=28\n- channel=RTL | playback=CUTV | minutes=892851 | viewers=429985 | days=28\n- channel=Nat Geo Wild | playback=LTV | minutes=873471 | viewers=507786 | days=28\n- channel=Viasat Explore | playback=LTV | minutes=823702 | viewers=355613 | days=28\n- channel=ExtraTV | playback=LTV | minutes=693878 | viewers=86069 | days=28\n- channel=AMC | playback=LTV | minutes=625752 | viewers=303272 | days=28\n- channel=History 2 | playback=LTV | minutes=497389 | viewers=290465 | days=28\n- channel=Nick Jr. hrvatski | playback=LTV | minutes=486558 | viewers=96021 | days=28\n- channel=RTL 2 | playback=CUTV | minutes=340128 | viewers=218399 | days=28\n- channel=RTL | playback=IR | minutes=332355 | viewers=192144 | days=28\n- channel=RTL Passion | playback=LTV | minutes=326837 | viewers=76751 | days=28\n- channel=Nova TV | playback=IR | minutes=304821 | viewers=165736 | days=28\n- channel=M1 Film | playback=LTV | minutes=262566 | viewers=281136 | days=28\n- channel=Pickbox TV | playback=CUTV | minutes=237972 | viewers=68282 | days=28"
+    ],
+    "reference":"In the IPTV Monthly Report for July 2025, RTL 2 had a total of 6,028,754 minutes and 1,496,486 unique viewers. In comparison to its performance in the top 20 entries for the same month, RTL 2 ranked second with 6,028,754 minutes, while the top entry, MAXSport 1, had 14,939,709 minutes and 1,525,719 viewers.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What was the viewership and playback minutes for History 2 compared to Nova TV in the top 20 entries?",
+    "reference_contexts":[
+      "<1-hop>\n\nTop 20 entries:\n- channel=Nova TV | playback=LTV | minutes=51622038 | viewers=4499806 | days=31\n- channel=RTL | playback=LTV | minutes=17995050 | viewers=4999005 | days=31\n- channel=HRT 2 | playback=LTV | minutes=9679808 | viewers=3714941 | days=31\n- channel=Pickbox TV | playback=LTV | minutes=2090874 | viewers=979252 | days=31\n- channel=STAR Movies | playback=LTV | minutes=1876254 | viewers=666714 | days=31\n- channel=RTL Crime | playback=LTV | minutes=1729496 | viewers=613972 | days=31\n- channel=History 2 | playback=LTV | minutes=1686104 | viewers=354712 | days=31\n- channel=HRT 1 | playback=CUTV | minutes=1439805 | viewers=448042 | days=31\n- channel=STAR | playback=LTV | minutes=1260089 | viewers=432808 | days=31\n- channel=HBO 2 | playback=LTV | minutes=1258012 | viewers=283577 | days=31\n- channel=STAR Crime | playback=LTV | minutes=1151274 | viewers=355222 | days=31\n- channel=Laudato TV | playback=LTV | minutes=1049978 | viewers=253122 | days=31\n- channel=MAXSport 1 | playback=LTV | minutes=957845 | viewers=1080272 | days=31\n- channel=RTL | playback=CUTV | minutes=921298 | viewers=414685 | days=31\n- channel=24Kitchen | playback=LTV | minutes=714489 | viewers=232257 | days=31\n- channel=AMC | playback=LTV | minutes=530667 | viewers=314181 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=507585 | viewers=155224 | days=31\n- channel=DMC | playback=LTV | minutes=474212 | viewers=170504 | days=31\n- channel=Arenasport 5 | playback=LTV | minutes=381771 | viewers=218515 | days=31\n- channel=Nova TV | playback=IR | minutes=300734 | viewers=154216 | days=31"
+    ],
+    "reference":"In the top 20 entries, History 2 had 1,686,104 playback minutes and 354,712 viewers, while Nova TV had 51,622,038 playback minutes and 4,499,806 viewers.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What were the viewer statistics for the channel History 2 compared to the top channel Nova TV in the last 31 days?",
+    "reference_contexts":[
+      "<1-hop>\n\nTop 20 entries:\n- channel=Nova TV | playback=LTV | minutes=51622038 | viewers=4499806 | days=31\n- channel=RTL | playback=LTV | minutes=17995050 | viewers=4999005 | days=31\n- channel=HRT 2 | playback=LTV | minutes=9679808 | viewers=3714941 | days=31\n- channel=Pickbox TV | playback=LTV | minutes=2090874 | viewers=979252 | days=31\n- channel=STAR Movies | playback=LTV | minutes=1876254 | viewers=666714 | days=31\n- channel=RTL Crime | playback=LTV | minutes=1729496 | viewers=613972 | days=31\n- channel=History 2 | playback=LTV | minutes=1686104 | viewers=354712 | days=31\n- channel=HRT 1 | playback=CUTV | minutes=1439805 | viewers=448042 | days=31\n- channel=STAR | playback=LTV | minutes=1260089 | viewers=432808 | days=31\n- channel=HBO 2 | playback=LTV | minutes=1258012 | viewers=283577 | days=31\n- channel=STAR Crime | playback=LTV | minutes=1151274 | viewers=355222 | days=31\n- channel=Laudato TV | playback=LTV | minutes=1049978 | viewers=253122 | days=31\n- channel=MAXSport 1 | playback=LTV | minutes=957845 | viewers=1080272 | days=31\n- channel=RTL | playback=CUTV | minutes=921298 | viewers=414685 | days=31\n- channel=24Kitchen | playback=LTV | minutes=714489 | viewers=232257 | days=31\n- channel=AMC | playback=LTV | minutes=530667 | viewers=314181 | days=31\n- channel=Crime & Investigation | playback=LTV | minutes=507585 | viewers=155224 | days=31\n- channel=DMC | playback=LTV | minutes=474212 | viewers=170504 | days=31\n- channel=Arenasport 5 | playback=LTV | minutes=381771 | viewers=218515 | days=31\n- channel=Nova TV | playback=IR | minutes=300734 | viewers=154216 | days=31"
+    ],
+    "reference":"In the last 31 days, the channel History 2 had 1,686,104 minutes of playback and 354,712 viewers. In contrast, the top channel Nova TV had significantly higher statistics with 51,622,038 minutes of playback and 4,499,806 viewers.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_specific_query_synthesizer"
+  },
+  {
+    "user_input":"What is the viewer count and playback minutes for HRT 1 compared to the top channel, Nova TV, over the last 26 days?",
+    "reference_contexts":[
+      "<1-hop>\n\nTop 20 entries:\n- channel=Nova TV | playback=LTV | minutes=24369006 | viewers=3844087 | days=26\n- channel=CineStar 1 | playback=LTV | minutes=1947553 | viewers=914307 | days=26\n- channel=Pickbox TV | playback=LTV | minutes=1750737 | viewers=632909 | days=26\n- channel=Hit mjeseca | playback=LTV | minutes=1418612 | viewers=473520 | days=26\n- channel=STAR Movies | playback=LTV | minutes=1204802 | viewers=470998 | days=26\n- channel=STAR | playback=LTV | minutes=965803 | viewers=324446 | days=26\n- channel=STAR Crime | playback=LTV | minutes=924932 | viewers=267778 | days=26\n- channel=HRT 1 | playback=CUTV | minutes=806006 | viewers=372284 | days=26\n- channel=Viasat History | playback=LTV | minutes=772622 | viewers=318013 | days=26\n- channel=Viasat True Crime | playback=LTV | minutes=769159 | viewers=246547 | days=26\n- channel=HBO 3 | playback=LTV | minutes=642314 | viewers=155044 | days=26\n- channel=Cinestar Fantasy | playback=LTV | minutes=468568 | viewers=427916 | days=26\n- channel=Arenasport 2 | playback=LTV | minutes=458921 | viewers=527011 | days=26\n- channel=Arena Fight | playback=LTV | minutes=428023 | viewers=200358 | days=26\n- channel=CineStar 1 | playback=CUTV | minutes=417355 | viewers=44587 | days=26\n- channel=Baby TV | playback=LTV | minutes=369947 | viewers=63095 | days=26\n- channel=Kino TV | playback=LTV | minutes=348568 | viewers=316312 | days=26\n- channel=24Kitchen | playback=LTV | minutes=313331 | viewers=174006 | days=26\n- channel=Mini TV | playback=LTV | minutes=202932 | viewers=55720 | days=26\n- channel=Hayat | playback=LTV | minutes=202364 | viewers=107031 | days=26"
+    ],
+    "reference":"HRT 1 had 372,284 viewers and 806,006 playback minutes over the last 26 days. In comparison, Nova TV had 3,844,087 viewers and 24,369,006 playback minutes during the same period.",
+    "persona_name":null,
+    "query_style":null,
+    "query_length":null,
+    "synthesizer_name":"multi_hop_specific_query_synthesizer"
+  }
+]

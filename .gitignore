@@ -39,3 +39,41 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# =========================
+# Python / Backend
+# =========================
+
+# Virtual environments
+.venv
+.venv*/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Qdrant local storage
+.qdrant_local/
+
+# SQLite / DuckDB runtime files
+*.db
+*.duckdb
+*.sqlite
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# OS
+Thumbs.db
+
+# Sensitive data
+tv_data/Monthly*
