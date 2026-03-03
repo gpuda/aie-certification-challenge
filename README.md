@@ -31,7 +31,7 @@ BroadcastIQ enables:
 - **Frontend:** Next.js + shadcn/ui  
 - **Backend:** FastAPI  
 - **Agent Framework:** LangGraph (ReAct Agent)  
-- **LLM:** GPT-4o-mini  
+- **LLM:** gpt-5-mini  
 - **Embeddings:** text-embedding-3-small  
 - **Vector Database:** Qdrant  
 - **Evaluation:** RAGAS  
