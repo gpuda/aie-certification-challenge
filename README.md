@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BroadcastIQ
 
-## Getting Started
+BroadcastIQ is an IPTV analytics assistant that enables natural language exploration of monthly channel performance datasets using an Agentic RAG architecture.
+The system allows business stakeholders to query structured IPTV KPI data without writing SQL, while maintaining data governance and accuracy.
 
-First, run the development server:
+---
 
-```bash
+### LOOM VIDEO
+
+Link: https://www.loom.com/share/3c82379fdcc84da3adba1a060690d85a
+
+---
+
+### GitHub Repository:
+
+Link: https://github.com/gpuda/aie-certification-challenge
+
+---
+
+## What This Project Does:
+BroadcastIQ enables:
+
+- Natural-language KPI queries over IPTV datasets
+- Channel ranking and aggregation (Top N, averages, comparisons)
+- Playback-type performance analysis
+- Controlled routing between internal RAG data and external web search (Tavily)
+
+---
+## Architecture Overview
+
+- **Frontend:** Next.js + shadcn/ui  
+- **Backend:** FastAPI  
+- **Agent Framework:** LangGraph (ReAct Agent)  
+- **LLM:** GPT-4o-mini  
+- **Embeddings:** text-embedding-3-small  
+- **Vector Database:** Qdrant  
+- **Evaluation:** RAGAS  
+
+Detailed Certification Challenge documentation (Tasks 1–7) is available here:
+➡️ [Certification Writeup](docs/certification_readme.md)
+
+---
+## How to Run Locally
+
+### Backend (http://localhost:8000): 
+cd api
+.\.venv\Scripts\Activate.ps1
+uvicorn app.main:app
+
+### Frontend (http://localhost:3000):
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Evaluation notebooks:
+api/notebooks/ingest_tv_data.ipynb
+api/notebooks/generate_testset_tv.ipynb
+api/notebooks/evaluate_tv.ipynb
+api/notebooks/evaluate_tv_improved.ipynb
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Project structure
+api/        -> main.py, agent.py, notebooks, dataset (tv_data)
+app/        -> Next.js frontend
+docs/       -> Certification Challenge writeup (certification_readme.md)
