@@ -2,12 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { Tv } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 type Message = {
   role: "user" | "assistant";
   content: string;
+  isPlaceholder?: boolean;
 };
 
 const QUICK_QUESTIONS = [
@@ -22,10 +24,12 @@ export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const bottomRef = useRef<HTMLDivElement | null>(null);
+  const typingIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const typingFullTextRef = useRef<string>("");
 
   async function sendMessage(textOverride?: string) {
     const textSafe = (textOverride ?? input ?? "").trim();
-    if (!textSafe) return;
+    if (!textSafe || isLoading) return;
 
     const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
     console.log("NEXT_PUBLIC_API_URL (compiled):", API);
@@ -35,18 +39,32 @@ export default function Home() {
     if (!textOverride) setInput("");
     setIsLoading(true);
 
-    const updatedMessages = [...(messages ?? []), userMsgObj];
-    setMessages(updatedMessages);
+    if (typingIntervalRef.current) {
+      clearInterval(typingIntervalRef.current);
+      typingIntervalRef.current = null;
+    }
+    typingFullTextRef.current = "";
+
+    const history = messages ?? [];
+    const messagesForBackend = [...history, userMsgObj];
+
+    const placeholder: Message = {
+      role: "assistant",
+      content: "BroadcastIQ is analysing the data...",
+      isPlaceholder: true,
+    };
+
+    setMessages([...messagesForBackend, placeholder]);
 
     try {
       const controller = new AbortController();
-      const timeoutMs = 30_000; // 30s (agent zna potrajati, ali quick pitanja su sad instant)
+      const timeoutMs = 30_000;
       const t = setTimeout(() => controller.abort(), timeoutMs);
 
       const res = await fetch(`${API}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: updatedMessages }),
+        body: JSON.stringify({ messages: messagesForBackend }),
         signal: controller.signal,
       });
 
@@ -54,7 +72,27 @@ export default function Home() {
 
       if (!res.ok) {
         const errText = await res.text();
-        throw new Error(`HTTP ${res.status}: ${errText}`);
+
+        let friendlyDetail = "";
+        try {
+          const maybeJson = JSON.parse(errText);
+          if (
+            maybeJson &&
+            typeof maybeJson === "object" &&
+            typeof (maybeJson as any).detail === "string"
+          ) {
+            friendlyDetail = (maybeJson as any).detail;
+          }
+        } catch {
+          // not JSON
+        }
+
+        const message =
+          friendlyDetail && friendlyDetail !== errText
+            ? `HTTP ${res.status}: ${friendlyDetail}`
+            : `HTTP ${res.status}: ${errText}`;
+
+        throw new Error(message);
       }
 
       const data = await res.json();
@@ -65,27 +103,97 @@ export default function Home() {
           : JSON.stringify(data?.content ?? "");
 
       const clean = raw.trim();
+      const finalText = clean.length > 0 ? clean : "No response content";
 
-      const assistantMsgObj: Message = {
-        role: "assistant",
-        content: clean.length > 0 ? clean : "No response content",
-      };
+      typingFullTextRef.current = finalText;
 
-      setMessages((prev) => [...(prev ?? []), assistantMsgObj]);
+      setMessages((prev) => {
+        const safe = [...(prev ?? [])];
+        const lastIndex = safe.length - 1;
+
+        if (lastIndex >= 0 && safe[lastIndex].role === "assistant") {
+          safe[lastIndex] = {
+            ...safe[lastIndex],
+            isPlaceholder: false,
+            content: "",
+          };
+        } else {
+          safe.push({
+            role: "assistant",
+            content: "",
+            isPlaceholder: false,
+          });
+        }
+
+        return safe;
+      });
+
+      let currentIndex = 0;
+      const step = 3;
+
+      typingIntervalRef.current = setInterval(() => {
+        currentIndex += step;
+        const next = typingFullTextRef.current.slice(0, currentIndex);
+
+        setMessages((prev) => {
+          const safe = [...(prev ?? [])];
+          const lastIndex = safe.length - 1;
+
+          if (lastIndex >= 0 && safe[lastIndex].role === "assistant") {
+            safe[lastIndex] = {
+              ...safe[lastIndex],
+              content: next,
+            };
+          }
+
+          return safe;
+        });
+
+        if (currentIndex >= typingFullTextRef.current.length) {
+          if (typingIntervalRef.current) {
+            clearInterval(typingIntervalRef.current);
+            typingIntervalRef.current = null;
+          }
+        }
+      }, 18);
     } catch (e: any) {
       console.error("CHAT error:", e);
 
+      if (typingIntervalRef.current) {
+        clearInterval(typingIntervalRef.current);
+        typingIntervalRef.current = null;
+      }
+      typingFullTextRef.current = "";
+
       const isAbort = typeof e?.name === "string" && e.name === "AbortError";
 
-      setMessages((prev) => [
-        ...(prev ?? []),
-        {
-          role: "assistant",
-          content: isAbort
-            ? "Error: request timeout (backend nije vratio odgovor). Provjeri backend /health i log."
-            : `Error: ${String(e?.message ?? "backend unavailable or invalid response")}`,
-        },
-      ]);
+      const errorText = isAbort
+        ? "Error: request timeout (backend nije vratio odgovor). Provjeri backend /health i log."
+        : `Error: ${String(e?.message ?? "backend unavailable or invalid response")}`;
+
+      setMessages((prev) => {
+        const safe = [...(prev ?? [])];
+        const lastIndex = safe.length - 1;
+
+        if (
+          lastIndex >= 0 &&
+          safe[lastIndex].role === "assistant" &&
+          safe[lastIndex].isPlaceholder
+        ) {
+          safe[lastIndex] = {
+            ...safe[lastIndex],
+            isPlaceholder: false,
+            content: errorText,
+          };
+        } else {
+          safe.push({
+            role: "assistant",
+            content: errorText,
+          });
+        }
+
+        return safe;
+      });
     } finally {
       setIsLoading(false);
     }
@@ -106,6 +214,14 @@ export default function Home() {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
+  useEffect(() => {
+    return () => {
+      if (typingIntervalRef.current) {
+        clearInterval(typingIntervalRef.current);
+      }
+    };
+  }, []);
+
   return (
     <main className="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100 flex flex-col items-center justify-center gap-6 p-6 overflow-hidden">
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -121,8 +237,8 @@ export default function Home() {
         transition={{ duration: 0.55 }}
         className="text-center z-10"
       >
-        <div className="mx-auto mb-4 h-16 w-16 rounded-3xl border border-white/10 bg-gradient-to-br from-[hsl(var(--primary)/0.40)] via-white/5 to-transparent backdrop-blur flex items-center justify-center shadow-[0_18px_60px_-24px_hsl(var(--primary)/0.60)]">
-          <span className="text-2xl">📺</span>
+        <div className="mx-auto mb-4 h-16 w-16 rounded-3xl border border-white/10 bg-gradient-to-br from-[hsl(var(--primary)/0.55)] via-fuchsia-500/40 to-transparent backdrop-blur flex items-center justify-center shadow-[0_24px_80px_-32px_rgba(236,72,153,0.75)] scale-110">
+          <Tv className="h-8 w-8 text-fuchsia-200" />
         </div>
 
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight">
@@ -180,6 +296,7 @@ export default function Home() {
                       isUser
                         ? "bg-[hsl(var(--primary))] text-white shadow-[0_10px_34px_-22px_hsl(var(--primary)/0.75)]"
                         : "bg-white/5 text-slate-100 border border-white/10",
+                      !isUser && m.isPlaceholder ? "opacity-75 animate-pulse" : "",
                     ].join(" ")}
                   >
                     {m.content}
@@ -197,7 +314,9 @@ export default function Home() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder={isLoading ? "Thinking..." : "Type something..."}
-              onKeyDown={(e) => (e.key === "Enter" ? sendMessage() : null)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") sendMessage();
+              }}
               disabled={isLoading}
             />
             <Button

@@ -28,13 +28,29 @@ MAX_HISTORY_MESSAGES = int(os.getenv("CHAT_MAX_HISTORY", "10"))
 FAST_RAG_MODEL = os.getenv("FAST_RAG_MODEL", MODEL)
 FAST_RAG_TIMEOUT_S = float(os.getenv("FAST_RAG_TIMEOUT_S", "20"))
 
-AGENT_TIMEOUT_S = float(os.getenv("AGENT_TIMEOUT_S", "60"))
+# Agent timeout is kept slightly below the frontend timeout (30s) so that
+# the backend can return a graceful fallback before the browser aborts.
+AGENT_TIMEOUT_S = float(os.getenv("AGENT_TIMEOUT_S", "25"))
+
+# Optional extra CORS origins for non-localhost deployments (comma-separated)
+_extra_origins_raw = os.getenv("FRONTEND_ORIGINS", "")
+_extra_origins = [
+    o.strip()
+    for o in _extra_origins_raw.split(",")
+    if o.strip()
+]
+
+_cors_origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    *(_extra_origins or []),
+]
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=_cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
