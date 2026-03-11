@@ -82,6 +82,24 @@ https://eu.smith.langchain.com/public/2874dfc8-3a7c-48b7-afbc-de305bc589a9/r
 
 ![LangSmith Trace](Snip.png)
 
+### LangSmith Evaluation of testset_tv
+
+We created a LangSmith dataset from `testset_tv.json` and used it to run evaluation experiments on the agent.  
+The dataset contains synthetic queries with ground truth answers and reference contexts.
+
+LangSmith traces and experiments allow systematic testing of agent responses against the expected answers.
+
+Links :
+
+https://eu.smith.langchain.com/public/23c1b4ea-e645-458a-8016-5f7ccfb0e217/d
+
+https://eu.smith.langchain.com/public/5d33c607-0cee-45eb-83a3-2c71fe53f5c3/r
+
+https://eu.smith.langchain.com/public/2dbec6f1-7c22-4651-b018-f38ab68f2a13/r
+
+https://eu.smith.langchain.com/public/517ccda6-635a-461c-83b9-09cf12d96469/r
+
+![LangSmith Trace](Snip2.png)
 
 ### Conclusion
 
