@@ -68,11 +68,16 @@ This helped improve reliability of the BroadcastIQ assistant.
 ### Example
 
 Links : 
-https://eu.smith.langchain.com/public/f0d3cb90-669d-4c14-aafe-8e4a74c4fdbe/r \n
-https://eu.smith.langchain.com/public/13675821-b646-4114-9338-8a19afe02309/r \n
-https://eu.smith.langchain.com/public/ee40dcca-35b5-494a-b76b-93363f000e0e/r \n
-https://eu.smith.langchain.com/public/5fabf861-b74a-4490-99ca-f316e417edf7/r \n
-https://eu.smith.langchain.com/public/2874dfc8-3a7c-48b7-afbc-de305bc589a9/r
+
+-https://eu.smith.langchain.com/public/f0d3cb90-669d-4c14-aafe-8e4a74c4fdbe/r
+
+-https://eu.smith.langchain.com/public/13675821-b646-4114-9338-8a19afe02309/r
+
+-https://eu.smith.langchain.com/public/ee40dcca-35b5-494a-b76b-93363f000e0e/r
+
+-https://eu.smith.langchain.com/public/5fabf861-b74a-4490-99ca-f316e417edf7/r
+
+-https://eu.smith.langchain.com/public/2874dfc8-3a7c-48b7-afbc-de305bc589a9/r
 
 ![LangSmith Trace](Snip.png)
 
