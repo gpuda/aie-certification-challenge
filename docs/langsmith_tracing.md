@@ -67,7 +67,12 @@ This helped improve reliability of the BroadcastIQ assistant.
 
 ### Example
 
-Link : https://eu.smith.langchain.com/o/75ff4c1d-cf37-42cd-93d9-5766e8888aaa/projects/p/b518221e-643e-4f97-a4b7-dc02a2379053?timeModel=%7B%22duration%22%3A%221d%22%7D
+Links : 
+https://eu.smith.langchain.com/public/f0d3cb90-669d-4c14-aafe-8e4a74c4fdbe/r
+https://eu.smith.langchain.com/public/13675821-b646-4114-9338-8a19afe02309/r
+https://eu.smith.langchain.com/public/ee40dcca-35b5-494a-b76b-93363f000e0e/r
+https://eu.smith.langchain.com/public/5fabf861-b74a-4490-99ca-f316e417edf7/r
+https://eu.smith.langchain.com/public/2874dfc8-3a7c-48b7-afbc-de305bc589a9/r
 
 ![LangSmith Trace](Snip.png)
 
